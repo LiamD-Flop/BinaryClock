@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #252422;
+    background-size: cover;
+    font-family: 'Righteous', cursive;
+    font-size: 2vw;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    display: inline-table;
+    margin: 0;
+    padding: 0;
+}
+
+ul:not(:first-child) {
+    position: relative;
+    top: -1vh;
+    margin: 0;
+}
+
+li {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+ul:not(:first-child) > li:first-child {
+    color: #cdd1c4;
+    width: 3vw;
+}
+
+object {
+    width: 2vw;
+    height: 2vw;
+}
+
+.time-half {
+    position: relative;
+    top: -1vh;
+    color: #555;
+}
+
+.time-half.active {
+    filter: none;
+    color: #cdd1c4;
+}
+
+.active {
+    filter: invert(100%) brightness(1.3);
+}
+
+#time {
+    position: absolute;
+    right: 2vw;
+    top: 2vw;
+    text-align: center;
+}
